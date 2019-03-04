@@ -11,6 +11,11 @@ import Modal from './Modal.vue'
 
 export default {
   name: 'CloseModal',
+  data() {
+    return {
+      show: false
+    }
+  },
   methods: {
     showModal() {
       this.show = true

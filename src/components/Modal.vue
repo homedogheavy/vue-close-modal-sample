@@ -1,7 +1,6 @@
 <template>
   <div class="overlay" @click="closeModal">
     <div class="content">
-      {{show}}
       <button @click="closeModal">close</button>
     </div>
   </div>
