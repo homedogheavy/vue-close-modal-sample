@@ -2,7 +2,7 @@
   <div>
     <button @click="showModal">show</button>
     {{show}}
-    <modal v-if="show" :show="show" :closeModal="closeModal"/>
+    <modal v-if="show" :closeModal="closeModal"/>
   </div>
 </template>
 
@@ -11,11 +11,6 @@ import Modal from './Modal.vue'
 
 export default {
   name: 'CloseModal',
-  data() {
-    return {
-      show: false
-    }
-  },
   methods: {
     showModal() {
       this.show = true

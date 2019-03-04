@@ -1,5 +1,5 @@
 <template>
-  <div class="overlay"v-if="show" @click="closeModal">
+  <div class="overlay" @click="closeModal">
     <div class="content">
       {{show}}
       <button @click="closeModal">close</button>
@@ -11,7 +11,6 @@
 export default {
   name: 'Modal',
   props: {
-    show: Boolean,
     closeModal: Function
   },
   created() {
